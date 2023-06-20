@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/048b944fff.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="./home.css">
+  </head>
+</head>
+<body>
+    <nav class="navbar bg-dark sticky-top px-2">
+        <div class="left-nav">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Iy-KwmPFeupV63DPPiQyMAAAAA&pid=Api&P=0&h=180" alt="app-logo" width="45" height="45" />
+            <span>IMDB App</span>
+        </div>
+
+         <!-- Search Bar-->
+         <div class="mx-auto" id="search-container">
+            <form action="" autocomplete="off">
+              <input type="search" placeholder="Search" id="search" autocomplete="off" />
+              <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              </button>
+            </form>
+          </div>
+
+        <div class="navbar-right">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <main id="movies-container">
+        <!-- <div class="card mb-3 movie">
+            <img class="card-img-top" src="https://tse3.mm.bing.net/th?id=OIP.tF0WILDhXwATPmw0xmG3KwHaEK&pid=Api&P=0&h=180" alt="Card image cap">
+            <div class="card-body">
+              <a href="#">
+                <h5 class="card-title">Card title</h5>
+              </a>
+              <p class="card-text">
+                <i class="fa-solid fa-star">
+                    <span>&nbsp;Rating</span>
+                </i>
+                <button class="like-button">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+              </p>
+            </div>
+        </div> -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./home.js"></script>
+</body>
+</html>
