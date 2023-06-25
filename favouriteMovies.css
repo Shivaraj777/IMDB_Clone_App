@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+
+/* Navbar */
+.nav{
+  background-color: rgb(53, 50, 50);
+}
+
+.app-name {
+  position: absolute;
+  top: 0;
+  color: hsl(234, 39%, 85%);
+  text-shadow: 2px -1px 6px hsl(234, 39%, 85%);
+}
+
+/* Main section */
+/* Favourite movies container */
+#place-holder{
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  color: hsl(234, 39%, 85%);
+  opacity: 0.4;
+}
+
+.display-place-holder{
+  display: none;
+}
+
+.card{
+  background-image: linear-gradient(to right, #FFD194, #D1913C);
+  max-width: 900px;
+}
+
+.card-body .card-title{
+  color: #4f6339;
+  font-size: larger;
+  font-weight: 800;
+}
+
+#movie-plot{
+  font-size: medium;
+  font-weight: 500;
+}
+
+.card-body .info-type{
+  font-size: large;
+  font-weight: 700;
+  color: #4f6339;
+}
+
+.card-body .info-type span{
+  font-size: medium;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.poster-img{
+  height: fit-content;
+  width: 17em;
+}
+
+.unfavourite-btn {
+  font-size: 15px;
+  padding: 7px 10px;
+  text-shadow: none;
+  border-radius: 3px;
+  border: none;
+  font-weight: 600;
+  background-color: #db2828;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Media queries */
+
+/* @media screen and (max-width: 767px){
+    #movie-poster{
+        position: relative;
+        left: 28%;
+    }
+} */
+
+@media screen and (max-width: 576px){
+  #movie-poster{
+      width: 100%;
+  }
+}

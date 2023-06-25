@@ -1,16 +1,67 @@
-
 body{
     margin: 0;
     padding: 0;
     color: whitesmoke;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 }
 
 /* Navbar */
-/* #search-container {
+.nav{
+    background-color: rgb(53, 50, 50);
+}
+
+.app-name {
+    position: absolute;
+    top: 0;
+    color: hsl(234, 39%, 85%);
+    text-shadow: 2px -1px 6px hsl(234, 39%, 85%);
+}
+
+#search-container {
     height: 40px;
     width: 50vw;
-} */
+}
 
+#search-container form {
+    width: inherit;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#search-container form input {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    padding: 1.5rem;
+    border: 0;
+}
+
+.search-btn {
+    height: 2.9rem;
+    width: 4.5rem;
+    border: transparent;
+    position: relative;
+    right: 0.2%;
+}
+  
+.search-icon {
+    font-size: 25px;
+}
+
+.fav-icon{
+    font-size: 25px;
+    color: rgb(207, 194, 194);
+}
+
+.fav-icon:hover{
+    color: grey;
+}
+
+/* Main section */
 /* Movies container */
 #movies-container{
     height: 100%;
@@ -21,30 +72,95 @@ body{
     flex-wrap: wrap;
 }
 
+#place-holder{
+    position: fixed;
+    top: 50%;
+    color: hsl(234, 39%, 85%);
+    opacity: 0.4;
+}
+
 .movie{
-    height: 21em;
+    height: 23em;
     width: 18em;
-    border: 1px solid black;
+    border: 0;
+    border-radius: 10px !important;
     margin: 2em;
-    margin-bottom: 8em !important;
+    margin-bottom: 3em !important;
     flex-shrink: 1;
 }
 
-.my-img{
+.card-body{
+    color: whitesmoke;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+
+.card-body a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.card-title{
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.card-text span{
+    font-size: large;
+    /* color: rgb(236, 233, 13); */
+}
+
+.poster-img{
     height: 14em !important;
-    width: 17.9em !important;
+    /* width: 17.9em !important; */
+    width: 100% !important;
+    border-top: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .like-button{
-    margin-left: 10em;
+    margin-left: 2px;
     border: transparent;
     background-color: transparent;
 }
 
-.fa-heart {
+.add-to-fav {
     color: rgb(207, 194, 194);
+    font-size: 20px;
 }
 
-.fa-heart:hover {
+/* .add-to-fav:hover {
     color: #ec0638;
+} */
+
+.remove-from-fav{
+    color: #ec0638;
+    font-size: 20px;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px){
+    .app-name {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .movie{
+        height: 26em;
+        flex-shrink: 0;
+    }
+
+    .my-img{
+        width: 100% !important;
+    }  
+}
+

@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* Navbar */
+.nav{
+    background-color: rgb(53, 50, 50);
+}
+
+.app-name {
+    position: absolute;
+    top: 0;
+    color: hsl(234, 39%, 85%);
+    text-shadow: 2px -1px 6px hsl(234, 39%, 85%);
+}
+
+/* Main section */
+#movie-title{
+    font-size: large;
+    font-weight: 700;
+}
+
+/* Movie card */
+.card{
+    color: whitesmoke;
+    background-image: linear-gradient(to right, #434343 0%, rgb(29, 28, 28) 100%);
+}
+
+.card-body .card-title{
+    color: rgb(159, 240, 66);
+    font-size: large;
+    font-weight: 700;
+}
+
+#movie-plot{
+    font-size: medium;
+    font-weight: 500;
+}
+
+.card-body .info-type{
+    font-size: large;
+    font-weight: 700;
+    color: rgb(159, 240, 66);
+}
+
+.card-body .info-type span{
+    font-size: medium;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.poster-img{
+    height: fit-content;
+    width: 17em;
+}
+
+.fa-star{
+    color: rgb(236, 233, 13);
+}
+
+/* Media queries */
+
+/* @media screen and (max-width: 767px){
+    #movie-poster{
+        position: relative;
+        left: 28%;
+    }
+} */
+
+@media screen and (max-width: 576px){
+    #movie-poster{
+        width: 100%;
+        left: 0;
+    }
+}
