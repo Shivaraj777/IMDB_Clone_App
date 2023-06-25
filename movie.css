@@ -71,6 +71,14 @@ body{
 } */
 
 @media screen and (max-width: 576px){
+    .navbar{
+        background-image: linear-gradient(to right, #141e30, #243b55);
+    }
+
+    #rating{
+        font-size: medium;
+    }
+
     #movie-poster{
         width: 100%;
         left: 0;

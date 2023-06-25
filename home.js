@@ -198,7 +198,7 @@ class Home{
         }
 
         // set target elemnet Id in local storage to acces it for any requirements
-        localStorage.setItem('movieName', target.id);
+        localStorage.setItem('movieId', target.id);
     }
 }
 

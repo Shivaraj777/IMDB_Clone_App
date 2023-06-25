@@ -2,7 +2,7 @@
 
 class MovieDetails{
     //get movie imdbID from local storage
-    movieId = localStorage.getItem('movieName');
+    movieId = localStorage.getItem('movieId');
 
     // get the elements from DOM
     movieTitle = document.getElementById('movie-title');

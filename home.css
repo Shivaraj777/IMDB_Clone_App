@@ -148,6 +148,10 @@ body{
 /* Media Queries */
 
 @media screen and (max-width: 576px){
+    .navbar{
+        background-image: linear-gradient(to right, #141e30, #243b55);
+    }
+
     .app-name {
         display: none !important;
     }
@@ -159,7 +163,7 @@ body{
         flex-shrink: 0;
     }
 
-    .my-img{
+    .poster-img{
         width: 100% !important;
     }  
 }

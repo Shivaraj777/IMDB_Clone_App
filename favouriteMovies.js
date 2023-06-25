@@ -19,7 +19,7 @@ class FavouriteMovies{
         if(movies.length === 0){
             this.moviesContainer.innerHTML = `
                 <h2 id="place-holder">
-                    Search results will appear here!
+                    No Movies to display!
                 </h2>
             `;
             return;
