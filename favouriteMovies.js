@@ -14,7 +14,7 @@ class FavouriteMovies{
     // display the movies on container
     displayFavourites = () => {
         const movies = this.getMovies(); //fetch the  movies from local storage
-        console.log('favourite movies: ', movies);
+        // console.log('favourite movies: ', movies);
 
         if(movies.length === 0){
             this.moviesContainer.innerHTML = `
@@ -74,7 +74,7 @@ class FavouriteMovies{
         const favMoviesLocal = localStorage.getItem('favMoviesList'); 
         const favMovies = Array.from(JSON.parse(favMoviesLocal));
         const updatedFavMovies = favMovies.filter((movie) => movie.imdbID !== imdbID);
-        console.log('Updated favourite movies: ', updatedFavMovies);
+        // console.log('Updated favourite movies: ', updatedFavMovies);
         localStorage.setItem('favMoviesList', JSON.stringify(updatedFavMovies));
 
         //update the favouite movies container and display the favourites list

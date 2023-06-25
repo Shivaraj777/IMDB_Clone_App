@@ -38,7 +38,7 @@ class MovieDetails{
     // render the contents of movie app at run time
     renderMovie = async () => {
         const movie = await this.fetchMovie();
-        console.log(movie);
+        // console.log(movie);
         this.movieTitle.innerText = movie.Title;
         this.movieYear.innerText = movie.Year;
         this.movieRunTime.innerText = movie.Runtime;

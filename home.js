@@ -46,7 +46,7 @@ class Home{
     // fetch movie from OMDB API base on on imdbID
     fetchMovie = async (imdbID) => {
         try{
-            console.log(imdbID);
+            // console.log(imdbID);
             const response = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=ab956ffa`);
             const data = await response.json();
             // console.log(data);
@@ -108,7 +108,7 @@ class Home{
 
         //fetch movies from API
         const movies = await this.fetchMovies(searchText);
-        console.log(movies);
+        // console.log(movies);
 
         // if search results contains movies render it on home page
         if(movies.Response === 'True'){
@@ -129,13 +129,13 @@ class Home{
         const favMoviesLocal = localStorage.getItem('favMoviesList');
         const favMovies = Array.from(JSON.parse(favMoviesLocal));
         const updatedFavMovies = favMovies.filter((movie) => movie.imdbID !== imdbID);
-        console.log('Updated favourite movies: ', updatedFavMovies);
+        // console.log('Updated favourite movies: ', updatedFavMovies);
         localStorage.setItem('favMoviesList', JSON.stringify(updatedFavMovies));
 
         // re-render the like button on removing from favouities
         let likeButton = document.getElementById(`like-button-${imdbID}`);
         let newLikeButton = likeButton;
-        console.log(this.checkFavourite(movie.imdbID));
+        // console.log(this.checkFavourite(movie.imdbID));
         newLikeButton.innerHTML = `
             <i class="fa-solid fa-heart ${this.checkFavourite(movie.imdbID) ? 'remove-from-fav' : 'add-to-fav'}" id="like-${movie.imdbID}"></i>
         `;
@@ -162,7 +162,7 @@ class Home{
         // fetch the movie details from API and add it to local storage
         const movie = await this.fetchMovie(imdbID);
         this.favouritesList.push(movie);
-        console.log(this.favouritesList);
+        // console.log(this.favouritesList);
         localStorage.setItem('favMoviesList', JSON.stringify(this.favouritesList));
 
         // re-render the like button on adding to favouities
@@ -193,7 +193,7 @@ class Home{
 
         // remove the default behaviour of search button
         if(target.classList.contains('search-btn') || target.classList.contains('search-icon')){
-            console.log(target.id);
+            // console.log(target.id);
             e.preventDefault();
         }
 
