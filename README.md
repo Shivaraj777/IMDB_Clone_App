@@ -23,7 +23,7 @@ Styling:
     The IMDB Clone app is styled by using:
         1. Bootstrap framework
         2. fontawesome(for icons)
-        3. Animate library(only used in movie page for a slide down animation)
+        3. Animate (only used in movie page for a slide down animation)
         4. External css files for each page.
         5. Also used media-queries for responsiveness.
 
